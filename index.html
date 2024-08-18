@@ -5,25 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beginner Game's Assets</title>
     <style>
-        /* Add your custom CSS styles here */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-image: url('https://via.placeholder.com/1500x500'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
             color: #fff;
             text-align: center;
-            padding: 1rem;
+            padding: 5rem 1rem;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
         }
         .container {
             max-width: 800px;
             margin: 2rem auto;
             padding: 2rem;
             background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        .portfolio-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .portfolio-item img {
+            max-width: 150px;
+            margin-right: 1rem;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio-item a {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+            .portfolio-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .portfolio-item img {
+                margin-bottom: 1rem;
+            }
         }
     </style>
 </head>
@@ -37,16 +97,20 @@
         <h2>About Me</h2>
         <p>
             I have been developing a game of mine for the past two years now. 
-            I got in to game development when I was 13 and I have been very passionate about it. 
+            I got into game development when I was 13 and have been very passionate about it. 
             I'm creating assets to help fellow developers kickstart their projects and learn new things along the way. 
             This process is also a great opportunity for me to expand my skills and knowledge. By sharing my work, I hope to contribute to the community and make game development more accessible to everyone.
         </p>
 
         <h2>Portfolio</h2>
-        <p>
-            I have released <a href="https://assetstore.unity.com/packages/tools/utilities/screenshot-tool-291169">Screenshot Tool<a/> for Unity.
-            Currently working on <a href="https://store.steampowered.com/app/2257910/Project_Zero/">Project Zero<a/> which is on Steam!
-        </p>
+        <div class="portfolio-item">
+            <img src="https://drive.google.com/file/d/1ZftPdcuCbGuqCVHhagH9ipWtOQj9dizr/view?usp=sharing" alt="Screenshot Tool Thumbnail"> <!-- Replace with actual image -->
+            <p><a href="https://assetstore.unity.com/packages/tools/utilities/screenshot-tool-291169">Screenshot Tool</a> for Unity.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://drive.google.com/file/d/1rMmhm15gyw1AQ9_ouQVPrwAsYMbK17o8/view?usp=sharing" alt="Project Zero Thumbnail"> <!-- Replace with actual image -->
+            <p><a href="https://store.steampowered.com/app/2257910/Project_Zero/">Project Zero</a> which is on Steam!</p>
+        </div>
 
         <h2>Contact</h2>
         <p>
